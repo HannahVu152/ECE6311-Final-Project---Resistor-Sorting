@@ -21,7 +21,7 @@ void loop ()
   Serial.print("R: ");                  
   Serial.println(R);                    // Give calculated resistance in Serial Monitor
   delay(500);                          // Delay in milliseconds between reeds
-  if(R==inf)
+  if(R>=100000)
   {
     motor1.run(BACKWARD);             // DC motor run backward direction 
     delay(400);                       // Delay in milliseconds between reeds
